@@ -1,0 +1,15 @@
+name: GAME
+
+services:
+  game:
+    image: "game:node"
+    build:
+      contexte: "."
+      dockerfile: Dockerfile
+    container_name: the_hyrule_castle
+    init: true 
+    volumes:
+      - ./resources:/The_Hyrule_Castle/resources
+    stdin_open: true  
+    tty: true
+    command: ["npm", "start"] 
