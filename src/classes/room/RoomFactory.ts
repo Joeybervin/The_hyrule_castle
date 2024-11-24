@@ -1,4 +1,4 @@
-import { IRoom } from "../interfaces/IRoom";
+import { IRoom } from "../../interfaces/IRoom";
 import { FightingRoom } from "./FightingRoom";
 import { TrapRoom } from "./TrapRoom";
 import { TreasureRoom } from "./TreasureRoom";

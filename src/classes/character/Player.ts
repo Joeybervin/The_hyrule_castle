@@ -2,7 +2,7 @@ import { Class } from "../../interfaces/Class";
 import { Race } from "../../interfaces/Race";
 import { displayPlayerBattleOptions } from "../../lib/display.lib";
 import { createNumberRangeRegExp, logCenteredText, readJsonFile } from "../../utils/utils";
-import { ICharacter } from "../interfaces/ICharacter";
+import { ICharacter } from "../../interfaces/ICharacter";
 import { Character } from "./Character"
 import { Enemy } from "./Enemy";
 

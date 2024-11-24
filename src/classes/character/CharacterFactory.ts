@@ -1,4 +1,4 @@
-import { ICharacter } from "../interfaces/ICharacter";
+import { ICharacter } from "../../interfaces/ICharacter";
 import { Boss } from "./Boss";
 import { Enemy } from "./Enemy";
 import { Player } from "./Player";

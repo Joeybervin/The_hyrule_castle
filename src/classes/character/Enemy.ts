@@ -1,4 +1,4 @@
-import { ICharacter } from "../interfaces/ICharacter";
+import { ICharacter } from "../../interfaces/ICharacter";
 import { Character } from "./Character";
 
 export class Enemy extends Character {

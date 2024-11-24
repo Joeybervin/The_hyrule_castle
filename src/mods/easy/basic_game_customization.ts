@@ -1,4 +1,4 @@
-import { enterGame } from '../../../main';
+import { enterGame } from '../../main';
 import { displayDifficultyDescription, displayMenu } from '../../lib/display.lib';
 import { startModsGame } from '../hyrule_castle'; 
 import { createNumberRangeRegExp, logCenteredText } from '../../utils/utils';

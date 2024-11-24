@@ -1,5 +1,5 @@
 import { Player } from "../../classes/character/Player";
-import { IRoom } from "../../classes/interfaces/IRoom";
+import { IRoom } from "../../interfaces/IRoom";
 import { RoomFactory } from "../../classes/room/RoomFactory";
 import { TrapRoom } from "../../classes/room/TrapRoom";
 import { TreasureRoom } from "../../classes/room/TreasureRoom";

@@ -1,0 +1,1 @@
+{"player":{"id":1,"name":"Link","hp":58,"maxHP":60,"mp":30,"str":15,"int":7,"def":8,"res":8,"spd":11,"luck":10,"rarity":1,"class":1,"race":1,"statsPlus":false,"coins":5,"exp":17,"expMax":85,"level":1},"gameStates":{"difficulty":"easy","enemyBoost":1,"randomExp":true,"gameMode":"dynamic","roomLevel":10,"gamePlayerStatsPlus":false,"randomRoomEvent":true},"lastLevelPlayed":4}

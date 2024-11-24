@@ -2,7 +2,7 @@ import { getRandomItem, getRandomItemFromFile } from "../../lib/game.lib";
 import { getRoomRequirement, isPlayerMeetRequirements } from "../../mods/intermediate/random_game_event";
 import { logCenteredText } from "../../utils/utils";
 import { Player } from "../character/Player";
-import { IRoom } from "../interfaces/IRoom";
+import { IRoom } from "../../interfaces/IRoom";
 import { Room } from "./Room";
 
 export class TrapRoom extends Room {

@@ -2,40 +2,53 @@
   <img src="./public/castle.png" alt="Logo du projet" width="250">
 </p>
 
-# 🏎️ Mario Kart Pathfinding Challenge
+# 🎮 Projet de Jeu RPG en TypeScript
 
-**Créez le chemin le plus rapide à travers les circuits les plus complexes !**
+Plongez dans **The Hyrule Castle**, un **jeu RPG captivant** développé en TypeScript. Dans cette aventure, vous incarnez des héros courageux qui doivent explorer les profondeurs du château de Hyrule. Votre mission : **combattre des ennemis redoutables**, **monter en niveau**, et relever des défis toujours plus intenses pour atteindre le boss final et **sauver votre village menacé**. 
 
-Bienvenue, ingénieur(e) en optimisation ! Ce projet consiste à développer un algorithme performant capable de résoudre des problèmes de cheminement à travers des cartes complexes. Le but ? Trouver le chemin le plus court, quel que soit l'obstacle.
+Avec son système modulaire, ce projet offre une expérience évolutive, permettant l'ajout de nouveaux contenus et fonctionnalités au fil du temps. Préparez-vous à une aventure inoubliable où exploration et héroïsme seront vos meilleurs alliés !
+
+---
 
 ## 🏆 Objectifs
-- Analyser une carte et la modéliser sous forme de graphe.
-- Implémenter des algorithmes performants pour trouver le chemin optimal.
-- Optimiser le code pour maximiser la vitesse d'exécution.
-- Utiliser TypeScript pour une structure claire et typée.
 
+- Concevoir un jeu RPG interactif en TypeScript.
+- Implémenter un système modulaire pour faciliter l'ajout de **mods** et **fonctionnalités personnalisées**.
+- Exploiter le design pattern **factory** pour une gestion optimisée des personnages, équipements et actions.
+- Renforcer les compétences en TypeScript, notamment la gestion des types et la modularité.
+
+---
 
 ## 📚 Structure du Projet
 
+### 📂 Arborescence du projet
+
 ```plaintext
-  ├── 📂 public
-  │   └── 📂 resources          # Fichiers de ressources pour les cartes du jeu
-  │       ├── 🗺️ simple.map        # Une carte facile pour commencer
-  │       ├── 🗺️ complex.map       # Un défi modéré avec plus d'obstacles
-  │       ├── 🗺️ hard.map          # Pour les experts en algorithmes !
-  ├── 📂 src
-  │   ├── 📄 index.ts              # Point d'entrée principal du projet
-  │   ├── 📂 lib
-  │   │   └── lib.ts            # Fonctions principales, y compris l'algorithme utilisé (ex. 
+📂 hyrule-castle
+├── 📂 public
+├── 📂 src
+│   ├── 📂 base_game              # Fonctions et classes de base pour le jeu
+│   │   └── hyrule_castle.ts      # Gestion de la logique principale du jeu
+│   ├── 📂 classes
+│   │   ├── 📂 character          # Classes liées aux personnages
+│   │   └── 📂 room               # Classes liées aux salles
+│   ├── 📂 interfaces             # Interfaces TypeScript utilisées dans le projet
+│   ├── 📂 lib                    # Bibliothèques utilitaires
+│   ├── 📂 mods                   # Mods pour différents niveaux de difficulté
+│   │   ├── 📂 easy               # Mod facile
+│   │   ├── 📂 intermediate       # Mod intermédiaire
+│   │   └── 📂 hard               # Mod difficile
+│   ├── 📂 utils                  # Utilitaires partagés
+│   └── 📄 main.ts                # Point d'entrée principal du projet
 
 ```
 
 ## ⚙️ **Installation**
 ### 1. Pré-requis
 Assurez-vous que les outils suivants sont installés sur votre machine :
-
 - Node.js : Version 16 ou plus récente.
 - TypeScript : Version 5 ou plus récente.
+
 
 ### 2. **Installation**
 1. **Cloner le dépôt** :
@@ -45,72 +58,27 @@ Assurez-vous que les outils suivants sont installés sur votre machine :
 ```
 2. **Installez les dépendances :**
 ```bash
-npm install
+  npm install
 ```
-
-
-
 
 ## 🚀 **Lancement**
 ### **1. Lancer le projet**
-En mode développement :
 ```bash
-  npm dev -- ./public/resources/<map_filename>
+  npm start
 ```
-En mode production :
-```bash
-  npm run compile
-  nom start -- ./public/resources/<map_filename>
-```
-
-
-
 
 ## **🛠️ Fonctionnalités**
-
-**1. Chargement de cartes :**
-  Les cartes sont des fichiers .map contenant des obstacles, des points de départ et d'arrivée.  
-**2. Recherche de chemin :**
-  Trouve le chemin le plus court à travers les obstacles grâce à un algorithme optimisé.  
-**3. Résultats clairs :**
-  Renvoie les coordonnées des points successifs du chemin au format : y:x y:x ....  
-
-## 🗺️ Format des Fichiers .map
-
-**Exemple :**  
-```plaintext
-  oo..E
-  o..o.
-  .o..o
-  .So..
-  .....
-```
-
-**Légende :**  
-
-S : Point de départ.  
-E : Point d'arrivée.  
-o : Obstacle (non traversable).  
-. : Zone traversable.  
-
-
-
-## 🔍 Algorithme Utilisé
-**BFS *(Breadth-First Search)***
-* Adapté pour trouver le chemin le plus court dans un graphe non pondéré.
-* Explore chaque niveau de voisins avant de passer au suivant.
-
-Optimisations :
-* Utilisation d'une file pour minimiser les coûts de mémoire.
-* Gestion efficace des coordonnées pour limiter les calculs inutiles.
-
+- **Gestion des salles et des interactions** via des classes spécifiques (Room, Character).
+- **Modifications dynamiques de gameplay** grâce aux mods (easy, intermediate, hard).
+- **Utilisation d'ESLint** pour un code propre et maintenable.
+- **Évolutivité facilitée** grâce à une architecture modulaire.
 
 
 ## 🌟 Ressources Utilisées
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/fr)
 - [ts-node](https://github.com/TypeStrong/ts-node)
+- [eslint](https://github.com/eslint/eslint)
 
 
-
-# 🏎️ Bonne chance et que le chemin le plus court soit avec vous ! 🚀
+# 🏰 Plongez dans l'aventure et prouvez que vous êtes digne de Hyrule Castle ! ⚔️

@@ -1,5 +1,5 @@
 import { logCenteredText } from "../../utils/utils";
-import { IRoom } from "../interfaces/IRoom";
+import { IRoom } from "../../interfaces/IRoom";
 
 const readlineSync = require('readline-sync');
 

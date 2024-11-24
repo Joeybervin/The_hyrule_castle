@@ -1,7 +1,7 @@
 import { Boss } from '../classes/character/Boss';
 import { Enemy } from '../classes/character/Enemy';
 import { Player } from '../classes/character/Player';
-import { ICharacter } from '../classes/interfaces/ICharacter';
+import { ICharacter } from '../interfaces/ICharacter';
 
 export const CharacterData = {
     player: <Player>{

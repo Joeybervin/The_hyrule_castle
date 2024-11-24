@@ -1,5 +1,5 @@
 import { Player } from "../classes/character/Player";
-import { ICharacter } from "../classes/interfaces/ICharacter";
+import { ICharacter } from "../interfaces/ICharacter";
 import { logCenteredText, logLeftCenteredText } from "../utils/utils";
 
 const readlineSync = require('readline-sync');

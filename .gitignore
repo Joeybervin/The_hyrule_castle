@@ -1,19 +1,7 @@
 # NODE MODULES
 /node_modules
 
-# JS FILES (in base_game and mods folder)
-/javascript
+# JS files
+/dist
 
-# PACKAGE-LOCK
-package-lock.json
-
-ESLINT
-.eslintrc.json
-eslint.config.mjs
-
-# ENVIRONMENT INSTALL
-env_install.sh
-
-# RESOURCE
-/resources
-
+src/mods/.hard

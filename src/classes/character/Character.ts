@@ -1,5 +1,4 @@
-import { escape } from "querystring";
-import { ICharacter } from "../interfaces/ICharacter";
+import { ICharacter } from "../../interfaces/ICharacter";
 
 export abstract class Character implements ICharacter {
 
